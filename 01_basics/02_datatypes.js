@@ -31,3 +31,9 @@ let city                        //undefined
     undefined -> placeholder for a value which is not defined yet
     type: undefined
 */
+
+//typeof keyword to know the datatype-
+console.log(typeof age)
+console.log(typeof state)   //null is an object
+console.log(typeof city)
+console.log(typeof "Shubhrangini")
