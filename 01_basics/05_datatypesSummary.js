@@ -8,7 +8,7 @@
 
     2. Non-Primitive(Reference): array, object, function
     -> heap memory is used
-    -> variable is passed by reference(actual address is sent)
+    -> variable is passed by reference(actual address/refrence is sent)
     -> changes made are deflected in actual variable as well
 */
 
@@ -18,9 +18,9 @@
 */
 let id = Symbol('123')
 let anotherId = Symbol('123')
-console.log(id == anotherId);   //false
-console.log(id === anotherId);  //false
-console.log(typeof anotherId);
+// console.log(id == anotherId);   -> false
+// console.log(id === anotherId);  -> false
+// console.log(typeof anotherId);
 
 //bigInt:
 let a = 123345677n  //syntax for bigint declaration
@@ -29,18 +29,26 @@ let a = 123345677n  //syntax for bigint declaration
 
 //Array(syntax):
 const fruits = ["apple", "banana", "grapes", "mango"];
-console.log(typeof fruits);
+// console.log(typeof fruits);  ->object
 
 //Object(syntax):
 let employee = {
     name: "Shubh",
     id: 1
 }
-console.log(typeof employee.name);
-console.log(typeof employee);
+// console.log(typeof employee.name);
+// console.log(typeof employee);
 
-//Function(syntax):
+//Function(syntax): 2 ways
 const myFunction = function(){
     console.log("Hello world");
 }
+myFunction()
 console.log(typeof myFunction);     //funtion object
+
+function myFunc()
+{
+    console.log("Hiiiie");
+}
+myFunc()
+console.log(typeof myFunc);
