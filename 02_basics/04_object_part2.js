@@ -101,9 +101,9 @@ console.log(users[1].email);     //access
 /*
     Returns in array using constructor Object
 */
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
@@ -118,14 +118,16 @@ const course =
     courseFees: 999
 }
 
-const {course.courseInstructorName} = course    
+const {courseInstructorName} = course    
 /*
-if you destructure, you don't have to write course.courseInstructorName again & again to access it, 
-only courseInstructorName would be enough! 
+    -> if you destructure, you don't have to write 
+    course.courseInstructorName again & again to access it, 
+    only courseInstructorName would be enough! 
 */
 console.log(courseInstructorName) 
 
-const {courseInstructor: instructor} = course    //can shorten the property name as well like this
+const {courseInstructorName: instructor} = course    
+//can shorten the property name as well like this
 console.log(instructor);
 
 /*
@@ -138,8 +140,8 @@ console.log(instructor);
 //     "price": "free"
 // }
 
-[
-    {},
-    {},
-    {}
-]
+// [
+//     {},
+//     {},
+//     {}
+// ]
