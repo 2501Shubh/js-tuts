@@ -52,6 +52,10 @@ if (true) {
 /*
     when we declare function like below,
         it can be accessed even before declaration!
+    
+    WHY?
+    
+    -> because the function declaration is hoisted, this allows the function to be called before its declaration in the code.
 */
 
 console.log(addone(5))
@@ -62,8 +66,11 @@ function addone(num){
 /*
     but when we declare function like below,
         it cannot be accessed before declaration!
+
     WHY?
-    -> because here a variable is holding function's value, so before declaration it cannot be accessed.
+
+    -> because the variable declaration (const addTwo) is hoisted, but its assignment to the function does not happen until the code execution phase.
+    -> the variable addTwo is known to exist due to hoisting but it is undefined until the assignment execution.
 */
 
 // console.log(addTwo(5))
@@ -71,3 +78,9 @@ const addTwo = function(num){
     return num + 2
 }
 console.log(addTwo(5))
+
+/*
+    What is Hoisting?
+        -> Hoisting is a JavaScript mechanism where variables and function declarations are *moved to the top of their containing scope* during the compilation phase, before the code is executed. 
+        -> No matter where variables and functions are declared within a scope, they are *treated as if they were declared at the top of the scope*.
+*/
