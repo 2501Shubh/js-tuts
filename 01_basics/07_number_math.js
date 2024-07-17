@@ -15,7 +15,7 @@ console.log(balance.toFixed(2));
 //after decimal how many digits to be included
 
 const otherNumber = 168.6745
-console.log(otherNumber.toPrecision(4));
+console.log(otherNumber.toPrecision(4));        //168.7
 
 const hundreds = 1000000
 console.log(hundreds.toLocaleString());     
