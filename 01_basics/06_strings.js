@@ -43,6 +43,10 @@ console.log(anotherStringOne);
 const anotherStringTwo = gameName.slice(-8, 8);
 console.log(anotherStringTwo);
 
+let text = "Hello world!"; 
+let result = text.slice(-5, -1);    //output: orld, as -5th index(from last) will be 'o' and and -1st index will be '!'(but since it is not included), therefore, th o/p will be 'orld'
+//from starting, index will be 0 -> when +ve start and end values
+//from ending, index will be -1 -> when -ve start/end values
 
 /*
     5.
